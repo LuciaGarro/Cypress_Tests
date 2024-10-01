@@ -1,12 +1,12 @@
 describe('Login test', () => {
   beforeEach(()  => {
     cy.log("Visit page");
-    cy.visit('https://admin-demo.nopcommerce.com/login');
+    cy.visit('https://www.mercadolibre.com.uy/');
   })
   it('visit the login page', () => {
 
-    cy.log("Click on email field")
-    cy.get("#Email").click()
+    cy.log("Click search bar")
+    cy.get(".nav-search-input").click()
 
     cy.log('Click on email field')
     cy.get('#Email').clear('admin@yourstore.com')
